@@ -19,4 +19,12 @@
   .social a:focus-visible svg path {
     stroke: var(--appblue);
   }
+
+  .active {
+    @apply text-appgreen;
+  }
+
+  .hero {
+    background: url("./assets/HomepageImage.webp") center no-repeat;
+  }
 }

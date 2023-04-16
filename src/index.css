@@ -9,6 +9,8 @@
 
   body {
     @apply font-roboto tracking-wide;
+    max-width: 1440px;
+    margin-inline: auto;
   }
 
   .newsletter-text:hover p svg path {
@@ -26,5 +28,9 @@
 
   .hero {
     background: url("./assets/HomepageImage.webp") center no-repeat;
+  }
+
+  .bg-benzene {
+    background: url("./assets//bg_benzene.png");
   }
 }

@@ -8,6 +8,7 @@ export default {
         appgreen: "#008000",
         appblue: "#1E87F0",
         appblackish: "#5F675D",
+        appgray: "#C4C4C4",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],

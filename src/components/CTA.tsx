@@ -2,8 +2,8 @@ const CTA = () => {
   return (
     <>
       <div className="bg-strip py-6">
-        <div className="bg-appdarkgreen text-white flex justify-center items-center gap-4 py-8">
-          <h1 className="text-2xl basis-[400px] text-center relative before:absolute before:w-[2px] before:h-16 before:bg-white before:right-0">
+        <div className="bg-appdarkgreen text-white flex flex-col lg:flex-row justify-center items-center gap-4 py-8">
+          <h1 className="text-2xl lg:basis-[400px] text-center lg:relative lg:before:absolute lg:before:w-[2px] lg:before:h-16 lg:before:bg-white lg:before:right-0">
             We Help Industry To Utilize The Heavy Equipment Work Better
           </h1>
           <div className="flex items-center justify-center">
@@ -24,11 +24,11 @@ const CTA = () => {
               />
             </svg>
             <p className="text-2xl text-center">
-              Get Quick Support <span className="block">+254717255460</span>
+              Get Quick Support<span className="block">+254717255460</span>
             </p>
           </div>
 
-          <a className="bg-apporange hover:bg-apporangehover ml-8 px-8 py-2 rounded" href="#">
+          <a className="bg-apporange hover:bg-apporangehover mt-2 lg:mt-0 lg:ml-8 px-8 py-2 rounded" href="#">
             Contact Us
             <svg
               className="inline ml-2"

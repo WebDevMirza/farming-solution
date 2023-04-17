@@ -31,6 +31,21 @@
   }
 
   .bg-benzene {
-    background: url("./assets//bg_benzene.png");
+    background: url("./assets/bg_benzene.png") center;
+    background-size: cover;
+  }
+
+  .bg-dark-benzene {
+    background: url("./assets/bg_dark.png") center;
+    background-size: cover;
+  }
+
+  .bg_equipment {
+    background: url("./assets/bg_about.webp") center no-repeat;
+    background-size: cover;
+  }
+
+  .bg-strip {
+    background: url("./assets/bg-strip.png") center;
   }
 }

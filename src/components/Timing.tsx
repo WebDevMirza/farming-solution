@@ -3,7 +3,7 @@ const Timing = () => {
     <>
       <div className="px-6 lg:px-20 py-2 bg-black222 text-white flex flex-col justify-between items-center gap-1 lg:flex-row">
         <div>
-          <a className="newsletter-text hover:text-appblue" href="#">
+          <a className="newsletter-text hover:text-appblue" href="#email">
             <p className="text-center">
               <svg
                 className="inline"

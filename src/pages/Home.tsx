@@ -8,17 +8,23 @@ import BoomLift from "../assets/machines/BOOMLIFT.png";
 import ForkLift from "../assets/machines/FORKLIFT.png";
 import Compaction from "../assets/machines/COMPACTION.png";
 import Roller from "../assets/machines/ROLLER.png";
+import LearnCard from "../components/LearnCard";
+import CTA from "../components/CTA";
+import Footer from "../components/Footer";
+import FindEquipment from "../components/FindEquipment";
+import Engineering from "../components/Engineering";
 
 const Home = () => {
   return (
     <>
       <Timing />
-      <header>
+      <header className="sticky top-0 bg-white z-10">
         <Header />
       </header>
       <main>
         <Hero />
-        <div className="bg-benzene">
+        <div className="bg-benzene relative">
+          <FindEquipment />
           <div className="mt-24 lg:w-[90%] mx-auto py-8">
             <div className="mb-8">
               <p className="text-center text-sm lg:text-lg">We Promise To Find You The Right Equipment</p>
@@ -34,7 +40,14 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <Engineering />
+        <LearnCard />
+        <CTA />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

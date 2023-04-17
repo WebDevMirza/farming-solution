@@ -2,11 +2,11 @@ const Hero = () => {
   return (
     <>
       <div className="hero">
-        <div className="w-[95%] lg:w-[50%] mx-auto py-20 text-white flex flex-col items-center gap-8">
+        <div className="w-[95%] lg:w-[50%] mx-auto py-20 text-white flex flex-col gap-8">
           <h1 className="text-3xl uppercase text-center leading-8 mb-52">
             Your One-Stop Source For All Equipment Rental Needs
           </h1>
-          <div className="relative rounded-lg overflow-hidden mt-8">
+          <div className="relative rounded-lg overflow-hidden mt-8 w-[95%] mx-auto">
             <input
               className="pl-4 pr-[6rem] py-4 lg:min-w-[550px] text-appblackish"
               type="text"

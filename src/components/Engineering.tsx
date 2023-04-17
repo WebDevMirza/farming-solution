@@ -4,11 +4,11 @@ const Engineering = () => {
   return (
     <>
       <div className="bg-dark-benzene text-white text-center">
-        <div className="w-[80%] mx-auto py-16 flex items-center">
+        <div className="w-[80%] mx-auto py-16 flex flex-col lg:flex-row items-center gap-8">
           <div>
-            <img className="w-[70%] aspect-square mx-auto" src={EngineringIMg} alt="bunch of engineers" />
+            <img className="lg:w-[70%] aspect-square mx-auto" src={EngineringIMg} alt="bunch of engineers" />
           </div>
-          <div className="space-y-2 w-[400px] mx-auto">
+          <div className="space-y-2 lg:w-[400px]">
             <p className="text-appgray font-medium">About E-Farming Equipments Rental</p>
             <h1 className="text-2xl font-medium">We Offer Smarter & More Affordable Access To Rent Farm Equipment</h1>
             <svg

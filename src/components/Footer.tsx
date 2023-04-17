@@ -2,9 +2,9 @@ const Footer = () => {
   return (
     <>
       <div className="bg-appbgfooter text-white flex flex-col justify-center items-center gap-8 py-4">
-        <div className="mt-4 flex w-[80%] justify-between items-center gap-2">
-          <div className="flex items-center gap-4">
-            <p className="font-bold text-3xl relative before:absolute before:w-[2px] before:h-8 before:bg-appgray before:-right-4">
+        <div className="mt-4 flex flex-col w-[90%] gap-6 mx-auto">
+          <div className="flex flex-col lg:flex-row gap-4 justify-center">
+            <p className="font-bold text-center text-3xl lg:relative lg:before:absolute lg:before:w-[2px] lg:before:h-8 lg:before:bg-appgray lg:before:-right-4">
               LOGO
             </p>
 
@@ -13,9 +13,9 @@ const Footer = () => {
               <span>Get Latest Deals from E-Farming</span>
             </p>
           </div>
-          <div className="flex gap-4 grow">
+          <div className="flex flex-wrap justify-center gap-4">
             <input
-              className="ml-auto w-[60%] px-4 text-appbgfooter rounded"
+              className="w-[90%] lg:w-[50%] px-4 py-2 text-appbgfooter rounded"
               type="email"
               name="email"
               id="email"
@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="w-[80%] h-[2px] mx-auto bg-appgray border-0 rounded" />
-        <div className="flex justify-around items-center w-[90%]">
+        <div className="flex flex-col lg:flex-row justify-around items-center w-[90%] gap-4">
           <div className="w-72 text-center">
             <p className="uppercase text-xl mb-2">About E-Farming</p>
             <svg
@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p className="text-sm">
+          <p className="text-sm px-4 text-center">
             @ <span className="text-apporange">2023</span>{" "}
             <span className="text-appgreen font-medium">E-Farming Solution</span> - Renting Farm Equipments. Terms &
             Conditions

@@ -18,14 +18,14 @@ const Home = () => {
   return (
     <>
       <Timing />
-      <header className="sticky top-0 bg-white z-10">
+      <header className="lg:sticky lg:top-0 lg:bg-white lg:z-10">
         <Header />
       </header>
       <main>
         <Hero />
         <div className="bg-benzene relative">
           <FindEquipment />
-          <div className="mt-24 lg:w-[90%] mx-auto py-8">
+          <div className="mt-52 lg:mt-24 lg:w-[90%] mx-auto py-8">
             <div className="mb-8">
               <p className="text-center text-sm lg:text-lg">We Promise To Find You The Right Equipment</p>
               <h1 className="text-center text-3xl">Browse Machinery Categories</h1>

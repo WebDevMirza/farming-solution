@@ -1,20 +1,20 @@
 const FindEquipment = () => {
   return (
     <>
-      <div className="absolute -top-40 left-1/2 -translate-x-1/2 max-w-[800px] w-[90%] ">
-        <div className="bg-appdarkgreen text-white px-4 py-6 flex flex-col gap-6 items-center rounded">
-          <h1 className="text-2xl uppercase">Find The Right Equipment</h1>
-          <div className="flex flex-wrap gap-8">
+      <div className="absolute -top-[17rem] lg:-top-40 left-1/2 -translate-x-1/2 max-w-[800px] w-[90%]">
+        <div className="bg-appdarkgreen text-white px-4 py-6 flex flex-col gap-6 lg:items-center rounded">
+          <h1 className="text-2xl text-center uppercase">Find The Right Equipment</h1>
+          <div className="flex flex-wrap flex-col lg:flex-row gap-4 lg:gap-8 px-2">
             <input
-              className="w-[40%] px-4 py-1.5 rounded text-appbgfooter"
+              className="lg:w-[40%] px-4 py-1.5 rounded text-appbgfooter"
               type="text"
               name="machine"
               id="machine"
               placeholder="Equipment Name..."
             />
             <input
-              className="w-[20%] px-4 py-1.5 rounded text-appbgfooter"
-              type="text"
+              className="lg:w-[20%] px-4 py-1.5 rounded text-appbgfooter"
+              type="number"
               name="machineprice"
               id="machineprice"
               placeholder="Price Below..."

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -98,24 +99,24 @@ const Header = () => {
         <nav className={toggle ? "mx-auto my-6 lg:block lg:m-0" : "hidden mx-auto my-6 lg:block lg:m-0"}>
           <ul className="flex flex-col lg:flex-row items-center gap-8 font-bold uppercase">
             <li>
-              <a className="active hover:text-appblue" href="#">
+              <NavLink className="hover:text-appblue" to="/">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className="hover:text-appblue" href="#">
+              <NavLink className="hover:text-appblue" to="/equipments">
                 Equipment List
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className="hover:text-appblue" href="#">
+              <NavLink className="hover:text-appblue" to="/about">
                 About Us
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className="hover:text-appblue" href="#">
+              <NavLink className="hover:text-appblue" to="/contacts">
                 Contact Us
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>

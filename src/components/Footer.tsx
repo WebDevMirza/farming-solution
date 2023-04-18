@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <>
@@ -51,19 +53,19 @@ const Footer = () => {
             <p className="uppercase text-xl mb-6">Useful links</p>
             <ul className="list-disc ml-4">
               <li>
-                <a className="hover:text-apporange" href="#">
+                <Link className="hover:text-apporange" to="/about">
                   About E-Farming
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-apporange" href="#">
+                <Link className="hover:text-apporange" to="/equipments">
                   Equipment List
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-apporange" href="#">
+                <Link className="hover:text-apporange" to="/contacts">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

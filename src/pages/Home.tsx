@@ -1,7 +1,5 @@
-import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Machine from "../components/Machine";
-import Timing from "../components/Timing";
 import Excavators from "../assets/machines/EXCAVATORS.png";
 import ScissorLift from "../assets/machines/SCISSOR LIFT.png";
 import BoomLift from "../assets/machines/BOOMLIFT.png";
@@ -10,17 +8,12 @@ import Compaction from "../assets/machines/COMPACTION.png";
 import Roller from "../assets/machines/ROLLER.png";
 import LearnCard from "../components/LearnCard";
 import CTA from "../components/CTA";
-import Footer from "../components/Footer";
 import FindEquipment from "../components/FindEquipment";
 import Engineering from "../components/Engineering";
 
 const Home = () => {
   return (
     <>
-      <Timing />
-      <header className="lg:sticky lg:top-0 lg:bg-white lg:z-10">
-        <Header />
-      </header>
       <main>
         <Hero />
         <div className="bg-benzene relative">
@@ -45,9 +38,6 @@ const Home = () => {
         <LearnCard />
         <CTA />
       </main>
-      <footer>
-        <Footer />
-      </footer>
     </>
   );
 };

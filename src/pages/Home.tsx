@@ -36,7 +36,9 @@ const Home = () => {
 
         <Engineering />
         <LearnCard />
-        <CTA />
+        <div className="bg-strip py-6">
+          <CTA />
+        </div>
       </main>
     </>
   );

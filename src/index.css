@@ -48,4 +48,16 @@
   .bg-strip {
     background: url("./assets/bg-strip.png") center;
   }
+
+  .bg-equipments {
+    background: url("./assets/bgheroequipments.png") center -100px no-repeat;
+  }
+
+  .bg-about {
+    background: url("./assets/bgheroabout.png") center -100px no-repeat;
+  }
+
+  .bg-contacts {
+    background: url("./assets/bgherocontact.png") center center no-repeat;
+  }
 }

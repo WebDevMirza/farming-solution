@@ -1,7 +1,13 @@
+import CTA from "../components/CTA";
+import SecondaryHero from "../components/SecondaryHero";
+
 const Equipments = () => {
   return (
     <>
-      <h1>This is equipments page</h1>
+      <main>
+        <SecondaryHero title="Equipments" bgHero="bg-equipments" />
+        <CTA />
+      </main>
     </>
   );
 };

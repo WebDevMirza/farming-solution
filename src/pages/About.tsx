@@ -1,7 +1,13 @@
+import CTA from "../components/CTA";
+import SecondaryHero from "../components/SecondaryHero";
+
 const About = () => {
   return (
     <>
-      <h1>This is About page</h1>
+      <main>
+        <SecondaryHero bgHero="bg-about" title="About Us" />
+        <CTA />
+      </main>
     </>
   );
 };

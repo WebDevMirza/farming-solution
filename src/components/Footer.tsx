@@ -15,18 +15,25 @@ const Footer = () => {
               <span>Get Latest Deals from E-Farming</span>
             </p>
           </div>
-          <div className="flex flex-wrap justify-center gap-4">
-            <input
-              className="w-[90%] lg:w-[50%] px-4 py-2 text-appbgfooter rounded"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email for newsletters ..."
-            />
-            <a className="bg-apporange px-8 py-2 rounded hover:bg-apporangehover" href="#">
-              Subscribe
-            </a>
-          </div>
+          <form
+            onSubmit={() => {
+              alert("Thank you!");
+            }}
+          >
+            <div className="flex flex-wrap justify-center gap-4">
+              <input
+                className="w-[90%] lg:w-[50%] px-4 py-2 text-appbgfooter rounded"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email for newsletters ..."
+                required
+              />
+              <button type="submit" className="bg-apporange px-8 py-2 rounded hover:bg-apporangehover">
+                Subscribe
+              </button>
+            </div>
+          </form>
         </div>
         <hr className="w-[80%] h-[2px] mx-auto bg-appgray border-0 rounded" />
         <div className="flex flex-col lg:flex-row justify-around items-center w-[90%] gap-4">
@@ -53,17 +60,44 @@ const Footer = () => {
             <p className="uppercase text-xl mb-6">Useful links</p>
             <ul className="list-disc ml-4">
               <li>
-                <Link className="hover:text-apporange" to="/about">
+                <Link
+                  onClick={() => {
+                    window.scroll({
+                      top: 0,
+                      left: 0,
+                    });
+                  }}
+                  className="hover:text-apporange"
+                  to="/about"
+                >
                   About E-Farming
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-apporange" to="/equipments">
+                <Link
+                  onClick={() => {
+                    window.scroll({
+                      top: 0,
+                      left: 0,
+                    });
+                  }}
+                  className="hover:text-apporange"
+                  to="/equipments"
+                >
                   Equipment List
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-apporange" to="/contacts">
+                <Link
+                  onClick={() => {
+                    window.scroll({
+                      top: 0,
+                      left: 0,
+                    });
+                  }}
+                  className="hover:text-apporange"
+                  to="/contacts"
+                >
                   Contact Us
                 </Link>
               </li>

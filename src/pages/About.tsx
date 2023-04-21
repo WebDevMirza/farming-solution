@@ -50,6 +50,23 @@ const About = () => {
             Reiciendis voluptas blanditiis quos voluptate harum.
           </p>
         </div>
+
+        <div className="w-[90%] mx-auto my-8 text-center text-xl uppercase flex justify-around items-center gap-4">
+          <div className="hover:bg-appgray px-4 py-2 rounded">
+            <p className="text-appgreen font-bold">2+</p>
+            <p className="font-bold tracking-wider">Years of experience</p>
+          </div>
+
+          <div className="hover:bg-appgray px-4 py-2 rounded">
+            <p className="text-appgreen font-bold">100+</p>
+            <p className="font-bold tracking-wider">machineries</p>
+          </div>
+
+          <div className="hover:bg-appgray px-4 py-2 rounded">
+            <p className="text-appgreen font-bold">2000+</p>
+            <p className="font-bold tracking-wider">CUSTOMERS</p>
+          </div>
+        </div>
         <CTA />
       </main>
     </>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const CTA = () => {
   return (
     <>
@@ -27,7 +29,16 @@ const CTA = () => {
           </p>
         </div>
 
-        <a className="bg-apporange hover:bg-apporangehover mt-2 lg:mt-0 lg:ml-8 px-8 py-2 rounded" href="#">
+        <Link
+          onClick={() => {
+            window.scroll({
+              top: 0,
+              left: 0,
+            });
+          }}
+          className="bg-apporange hover:bg-apporangehover mt-2 lg:mt-0 lg:ml-8 px-8 py-2 rounded"
+          to="/contacts"
+        >
           Contact Us
           <svg
             className="inline ml-2"
@@ -47,7 +58,7 @@ const CTA = () => {
             <path d="M12 16L16 12L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             <path d="M8 12H16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-        </a>
+        </Link>
       </div>
     </>
   );

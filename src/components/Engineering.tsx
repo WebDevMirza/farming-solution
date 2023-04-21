@@ -19,9 +19,9 @@ const Engineering = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <line y1="1" x2="348" y2="1" stroke="#FFB800" stroke-width="2" />
-              <line x1="54" y1="14" x2="302" y2="14" stroke="#FFB800" stroke-width="2" />
-              <line x1="116" y1="30" x2="246" y2="30" stroke="#FFB800" stroke-width="2" />
+              <line y1="1" x2="348" y2="1" stroke="#FFB800" strokeWidth="2" />
+              <line x1="54" y1="14" x2="302" y2="14" stroke="#FFB800" strokeWidth="2" />
+              <line x1="116" y1="30" x2="246" y2="30" stroke="#FFB800" strokeWidth="2" />
             </svg>
             <p className="pt-4">
               Aiusmod tempor incididunt ut labore sed dolore magna aliquay dnim ad minim veniam quis nostrud

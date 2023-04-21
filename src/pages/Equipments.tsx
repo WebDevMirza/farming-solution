@@ -1,11 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CTA from "../components/CTA";
 import SecondaryHero from "../components/SecondaryHero";
 import AllEquipments from "../assets/data/AllEquipments.json";
+import { useLocation } from "react-router-dom";
 
 const Equipments = () => {
   const [equip, setEquipment] = useState(AllEquipments);
   const [equipActive, setEquipActive] = useState("equipments");
+  const location = useLocation();
+  useEffect(() => {
+    if (location.state?.type != undefined) {
+      equipFilter(location.state.type);
+    }
+  }, []);
 
   const equipFilter = (equipType: string) => {
     const newEquipFilter = AllEquipments.filter((value) => {

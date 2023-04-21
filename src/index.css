@@ -72,4 +72,8 @@
   .thanks {
     @apply text-2xl font-medium text-center;
   }
+
+  .equipActive {
+    @apply text-apporange;
+  }
 }

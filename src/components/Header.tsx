@@ -99,22 +99,62 @@ const Header = () => {
         <nav className={toggle ? "mx-auto my-6 lg:block lg:m-0" : "hidden mx-auto my-6 lg:block lg:m-0"}>
           <ul className="flex flex-col lg:flex-row items-center gap-8 font-bold uppercase">
             <li>
-              <NavLink className="hover:text-appblue" to="/">
+              <NavLink
+                className="hover:text-appblue"
+                to="/"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    // behavior: "smooth",
+                  });
+                }}
+              >
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink className="hover:text-appblue" to="/equipments">
+              <NavLink
+                className="hover:text-appblue"
+                to="/equipments"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    // behavior: "smooth",
+                  });
+                }}
+              >
                 Equipment List
               </NavLink>
             </li>
             <li>
-              <NavLink className="hover:text-appblue" to="/about">
+              <NavLink
+                className="hover:text-appblue"
+                to="/about"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    // behavior: "smooth",
+                  });
+                }}
+              >
                 About Us
               </NavLink>
             </li>
             <li>
-              <NavLink className="hover:text-appblue" to="/contacts">
+              <NavLink
+                className="hover:text-appblue"
+                to="/contacts"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    // behavior: "smooth",
+                  });
+                }}
+              >
                 Contact Us
               </NavLink>
             </li>

@@ -24,12 +24,12 @@ const Home = () => {
               <h1 className="text-center text-3xl">Browse Machinery Categories</h1>
             </div>
             <div className="flex flex-wrap gap-4 lg:gap-8">
-              <Machine img={Excavators} title="Excavators" />
-              <Machine img={ScissorLift} title="ScissorLift" />
-              <Machine img={BoomLift} title="BoomLift" />
-              <Machine img={ForkLift} title="ForkLift" />
-              <Machine img={Compaction} title="Compaction" />
-              <Machine img={Roller} title="Roller" />
+              <Machine img={Excavators} title="excavators" />
+              <Machine img={ScissorLift} title="scissor lifts" />
+              <Machine img={BoomLift} title="boom lifts" />
+              <Machine img={ForkLift} title="forklifts" />
+              <Machine img={Compaction} title="compaction" />
+              <Machine img={Roller} title="roller" />
             </div>
           </div>
         </div>

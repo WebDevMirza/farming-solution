@@ -45,7 +45,7 @@ const CTA = () => {
               strokeLinejoin="round"
             />
             <path d="M12 16L16 12L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M8 12H16" stroke="white" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M8 12H16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </a>
       </div>

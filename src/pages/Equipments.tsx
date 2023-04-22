@@ -2,15 +2,31 @@ import { useEffect, useState } from "react";
 import CTA from "../components/CTA";
 import SecondaryHero from "../components/SecondaryHero";
 import AllEquipments from "../assets/data/AllEquipments.json";
-import { useLocation } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
 
 const Equipments = () => {
   const [equip, setEquipment] = useState(AllEquipments);
   const [equipActive, setEquipActive] = useState("equipments");
   const location = useLocation();
+  const [searchParams, setSearchParams] = useSearchParams();
+
   useEffect(() => {
     if (location.state?.type != undefined) {
       equipFilter(location.state.type);
+    }
+
+    if (searchParams.get("equipment")) {
+      equipFilter(searchParams.get("equipment")!);
+    }
+
+    if (searchParams.get("search")) {
+      let query = searchParams.get("search");
+
+      const newEquipFilter = AllEquipments.filter((value) => {
+        return value.name.match(new RegExp(query!, "i"));
+      });
+
+      setEquipment(newEquipFilter);
     }
   }, []);
 

@@ -76,4 +76,11 @@
   .equipActive {
     @apply text-apporange;
   }
+
+  .dropdown {
+    appearance: none;
+    background: url("./assets/down.png") no-repeat right 10px center;
+    background-size: 10%;
+    background-color: #fff;
+  }
 }
